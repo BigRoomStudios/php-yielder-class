@@ -1,0 +1,20 @@
+{
+    "name": "BigRoomStudios/php-yeilder-class",
+    "description": "A performance benchmarking and differental library.",
+	"type": "library",
+    "keywords": ["generator"],
+    "homepage": "https://github.com/BigRoomStudios/php-yeilder-class",
+    "license": "MIT",
+	"support": {
+		"issues": "https://github.com/BigRoomStudios/php-yeilder-class/issues",
+		"source": "https://github.com/BigRoomStudios/php-yeilder-class/"
+	},
+    "require": {
+        "php": ">=5.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BRS\\Utility\\Generator\\": "src/"
+        }
+    }
+}

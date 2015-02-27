@@ -1,0 +1,13 @@
+function xrange($start, $end, $step = 1){
+	return new Yeilder(function($position = 0, &$stop) use ($start, $end, $step) {
+		$current = ($position*$step) + $start;
+		if($current <= $end) {
+			return $current;
+		}
+	});
+}
+
+echo "From 5 to 10 in steps of 1\n";
+foreach(xrange(5, 10) as $key => $value) {
+	echo "$key => $value\n";
+}
