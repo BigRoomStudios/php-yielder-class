@@ -1,5 +1,5 @@
 function xrange($start, $end, $step = 1){
-	return new Yeilder(function($position = 0, &$stop) use ($start, $end, $step) {
+	return new Yielder(function($position = 0, &$stop) use ($start, $end, $step) {
 		$current = ($position*$step) + $start;
 		if($current <= $end) {
 			return $current;
