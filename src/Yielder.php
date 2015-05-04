@@ -3,23 +3,23 @@
 namespace BRS\Generator;
 
 /**
- * Yeilder 
+ * Yielder 
  *
- * This class brings Generator-style Yeilding to PHP > 5.0.0
+ * This class brings Generator-style Yielding to PHP > 5.0.0
  *
  * Generators are only available in PHP >= 5.5.0, and this allows a developer to
  * mimick this behaviour in ealier versions of PHP.  This class was developed
  * after realizing that, from reading it's description on PHP.net, this is all
  * Generators realy are, just with different keywords and helpers.
  *
- * @example yeilder_usage.php How to use the Yeilder Class.
+ * @example yielder_usage.php How to use the Yielder Class.
  *
  * @see http://php.net/manual/en/language.generators.overview.php
  * @see \Iterator http://php.net/manual/en/class.iterator.php
  * 
  * @author Michael Mulligan <michael@bigroomstudios.com> 
  */
-class Yeilder implements Iterator {
+class Yielder implements Iterator {
 
 	/**
 	 * @var bool If we should stop on a Callback Return of NULL
@@ -60,12 +60,12 @@ class Yeilder implements Iterator {
 	 *
 	 * Sets up internal pointers and flags.
 	 * 
-	 * @param callable $callback The Callback that will be yeilding data.
+	 * @param callable $callback The Callback that will be yielding data.
 	 * @param bool $stop_on_null (optional) Wether or not to stop on NULL.
 	 * 
 	 * @return void
 	 * 
-	 * @throws \BRS\Generator\Exception Yeilding Function must be callable.
+	 * @throws \BRS\Generator\Exception Yielding Function must be callable.
 	 * 
 	 * @access public 
 	 *
@@ -73,7 +73,7 @@ class Yeilder implements Iterator {
 	 */
     public function __construct($callback, $stop_on_null = TRUE) {
         if(!is_callable($callback)) {
-            throw new Exception('Yeilding Function must be callable.');
+            throw new Exception('Yielding Function must be callable.');
         }
         $this->null_stop = (bool) $stop_on_null;
         $this->callback  = $callback;
