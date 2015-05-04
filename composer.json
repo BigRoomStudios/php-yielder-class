@@ -1,13 +1,13 @@
 {
-    "name": "BigRoomStudios/php-yeilder-class",
-    "description": "A performance benchmarking and differental library.",
+    "name": "big-room-studios/php-yielder-class",
+    "description": "A pre-PHP5.5 generator class providing support for the 'yield' keyword.",
 	"type": "library",
-    "keywords": ["generator"],
-    "homepage": "https://github.com/BigRoomStudios/php-yeilder-class",
+    "keywords": ["generator","yield"],
+    "homepage": "https://github.com/BigRoomStudios/php-yielder-class",
     "license": "MIT",
 	"support": {
-		"issues": "https://github.com/BigRoomStudios/php-yeilder-class/issues",
-		"source": "https://github.com/BigRoomStudios/php-yeilder-class/"
+		"issues": "https://github.com/BigRoomStudios/php-yielder-class/issues",
+		"source": "https://github.com/BigRoomStudios/php-yielder-class/"
 	},
     "require": {
         "php": ">=5.0.0"
